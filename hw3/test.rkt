@@ -55,7 +55,7 @@
                  "(and 1 2 'c '(f g)))")
    (check-equal? (test-mceval '(and false (error)))
                  #f
-                 "(and 1 2 'c '(f g)))")
+                 "(and false (error))")
    (check-equal? (test-mceval '(and))
                  #t
                  "(and)")))
